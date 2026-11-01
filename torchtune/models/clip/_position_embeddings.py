@@ -112,7 +112,7 @@ class TiledTokenPositionalEmbedding(nn.Module):
         **kwargs: dict[str, Any],
     ) -> None:
         """
-        Interpolates positional embeddings to accomodate different number of tiles
+        Interpolates positional embeddings to accommodate different number of tiles
         and tokens per tile, in case the model was instantiated with different
         settings than the one you are loading the state dict from.
 
@@ -516,7 +516,7 @@ class TilePositionalEmbedding(nn.Module):
         **kwargs: dict[str, Any],
     ):
         """
-        Interpolates positional embeddings to accomodate different number of tiles,
+        Interpolates positional embeddings to accommodate different number of tiles,
         in case the model was instantiated with different
         settings than the one you are loading the state dict from.
 
@@ -603,7 +603,7 @@ class TilePositionalEmbedding(nn.Module):
         embedding: torch.Tensor, tgt_max_num_tiles: int
     ) -> torch.Tensor:
         """
-        Interpolates positional embeddings to accomodate a different max_num_tiles. These
+        Interpolates positional embeddings to accommodate a different max_num_tiles. These
         are the only dimensions that changes during interpolation.
 
         Args:

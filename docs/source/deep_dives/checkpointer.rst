@@ -270,7 +270,7 @@ for testing or for loading quantized models for generation.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This checkpointer reads and writes checkpoints in a distributed format using Pytorch Distributed Checkpointing (DCP).
-The output format is DCP's default format, which saves the state dict across all ranks, as seperate files for each rank. This differs
+The output format is DCP's default format, which saves the state dict across all ranks, as separate files for each rank. This differs
 from the other checkpointer implementations, which consolidate to rank-0 and then save the state dict as full tensors.
 The distributed checkpointer is enabled when enabling asynchronous checkpointing during training and uses DCP's async_save API.
 Async distributed checkpointing is only used for intermediate checkpoints.
